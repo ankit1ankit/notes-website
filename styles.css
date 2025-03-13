@@ -1,0 +1,451 @@
+:root {
+    --bg-color: #f8f9fa;
+    --header-bg: #ffffff;
+    --text-color: #2c3e50;
+    --box-bg: #ffffff;
+    --subject-bg: #f0f4f8;
+    --chapter-bg: #e9ecef;
+    --hover-bg: #dee2e6;
+    --border-color: #e9ecef;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --highlight-bg: #e3f2fd;
+    --sub-highlight-bg: #fff3e0;
+}
+
+[data-theme="dark"] {
+    --bg-color: #171717;
+    --header-bg: #1E1E1E;
+    --text-color: #E4E4E4;
+    --box-bg: #252525;
+    --subject-bg: #2A2A2A;
+    --chapter-bg: #303030;
+    --hover-bg: #353535;
+    --border-color: #404040;
+    --shadow-color: rgba(0, 240, 255, 0.1);
+    --highlight-bg: #264D52;
+    --sub-highlight-bg: #1B4B54;
+}
+
+/* Enhanced gradient and glow effects for dark theme */
+[data-theme="dark"] section {
+    background: linear-gradient(135deg, var(--box-bg) 0%, #2A2A2A 50%, var(--box-bg) 100%);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 20px rgba(0, 240, 255, 0.05),
+                inset 0 0 20px rgba(0, 240, 255, 0.02);
+}
+
+[data-theme="dark"] section:hover {
+    background: linear-gradient(135deg, #2A2A2A 0%, var(--box-bg) 50%, #2A2A2A 100%);
+    box-shadow: 0 6px 25px rgba(0, 240, 255, 0.08),
+                inset 0 0 25px rgba(0, 240, 255, 0.03);
+    border-color: #00F0FF;
+}
+
+[data-theme="dark"] .subject-box {
+    background: linear-gradient(135deg, var(--subject-bg) 0%, #303030 50%, var(--subject-bg) 100%);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 240, 255, 0.05),
+                inset 0 0 10px rgba(0, 240, 255, 0.02);
+}
+
+[data-theme="dark"] .subject-box:hover {
+    background: linear-gradient(135deg, #303030 0%, var(--subject-bg) 50%, #303030 100%);
+    box-shadow: 0 4px 15px rgba(0, 240, 255, 0.08),
+                inset 0 0 15px rgba(0, 240, 255, 0.03);
+    border-color: #00F0FF;
+}
+
+[data-theme="dark"] .chapter-title {
+    background: linear-gradient(135deg, var(--sub-highlight-bg) 0%, #264D52 50%, var(--sub-highlight-bg) 100%);
+    border-bottom: 2px solid #00F0FF;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
+[data-theme="dark"] .chapter-title:hover {
+    background: linear-gradient(135deg, #264D52 0%, var(--sub-highlight-bg) 50%, #264D52 100%);
+}
+
+[data-theme="dark"] #theme-toggle {
+    background: linear-gradient(135deg, var(--header-bg) 0%, #252525 50%, var(--header-bg) 100%);
+    box-shadow: 0 2px 15px rgba(0, 240, 255, 0.08),
+                inset 0 0 10px rgba(0, 240, 255, 0.03);
+    border-color: #00F0FF;
+}
+
+[data-theme="dark"] .chapter-container {
+    box-shadow: 0 4px 15px rgba(0, 240, 255, 0.05),
+                inset 0 0 10px rgba(0, 240, 255, 0.02);
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] header {
+    background: linear-gradient(135deg, var(--header-bg) 0%, #252525 50%, var(--header-bg) 100%);
+    box-shadow: 0 2px 15px rgba(0, 240, 255, 0.05);
+}
+
+[data-theme="dark"] .subject-box.sub-subject {
+    background: linear-gradient(135deg, var(--highlight-bg) 0%, #1B4B54 50%, var(--highlight-bg) 100%);
+    border-left: 4px solid #00F0FF;
+}
+
+/* Add a subtle gradient and glow effect for dark theme elements */
+[data-theme="dark"] section {
+    background: linear-gradient(145deg, var(--box-bg), #2a0c57);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .subject-box {
+    background: linear-gradient(145deg, var(--subject-bg), #330d69);
+    border-color: var(--border-color);
+}
+
+[data-theme="dark"] .chapter-title {
+    background: linear-gradient(145deg, var(--sub-highlight-bg), #7928ea);
+}
+
+[data-theme="dark"] #theme-toggle {
+    background: linear-gradient(145deg, var(--header-bg), #230b4a);
+    box-shadow: 0 2px 15px rgba(147, 51, 234, 0.4);
+}
+
+[data-theme="dark"] .chapter-container {
+    box-shadow: 0 4px 15px rgba(147, 51, 234, 0.2);
+}
+
+/* Add -webkit-tap-highlight-color to prevent grey flash on tap in iOS */
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    -webkit-text-size-adjust: 100%;
+}
+
+header {
+    background-color: var(--header-bg);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 0 2px 10px var(--shadow-color);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    gap: 0.5em;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 1.8em;
+}
+
+.creator-info {
+    text-align: center;
+    font-size: 0.9em;
+    font-style: italic;
+    color: var(--text-color);
+    opacity: 0.9;
+    margin-top: 0.3em;
+}
+
+#theme-toggle {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    background: var(--header-bg);
+    border: 1px solid var(--border-color);
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px var(--shadow-color);
+    z-index: 1000;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.dark-icon {
+    display: none;
+}
+
+[data-theme="dark"] .dark-icon {
+    display: inline;
+}
+
+[data-theme="dark"] .light-icon {
+    display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+#class-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+    max-width: 800px;
+}
+
+.class-wrapper {
+    width: 100%;
+}
+
+section {
+    background-color: var(--box-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px var(--shadow-color);
+    padding: 1.2em;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+    box-sizing: border-box;
+}
+
+section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px var(--shadow-color);
+}
+
+#content-container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.class-content {
+    width: 100%;
+    margin-top: 1em;
+}
+
+.subjects {
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0.5em 0 0 0;
+    padding-left: 1.5em;
+    border-left: 3px solid var(--border-color);
+}
+
+.subjects.show {
+    display: block;
+}
+
+.subject-box {
+    background-color: var(--subject-bg);
+    color: var(--text-color);
+    margin: 0.8em 0;
+    padding: 1em;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 95%;
+    box-shadow: 0 2px 8px var(--shadow-color);
+    border: 1px solid var(--border-color);
+}
+
+.subject-box:hover {
+    background-color: var(--hover-bg);
+    transform: translateX(4px);
+}
+
+.subject-box.sub-subject {
+    background-color: var(--highlight-bg);
+    margin: 0.8em auto;
+    width: 95%;
+    font-size: 0.95em;
+    border-left: 4px solid var(--hover-bg);
+    box-shadow: 0 2px 6px var(--shadow-color);
+}
+
+.chapters {
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0.5em auto;
+    padding-left: 1.5em;
+    border-left: 3px solid var(--border-color);
+    max-width: 800px;
+}
+
+.chapters.show {
+    display: block;
+}
+
+.chapter-container {
+    background-color: var(--chapter-bg);
+    border-radius: 8px;
+    margin: 0.8em auto;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px var(--shadow-color);
+    border: 1px solid var(--border-color);
+    max-width: 95%;
+}
+
+.chapter-container + .chapter-container {
+    margin-top: 0.8em;
+}
+
+.chapter-title {
+    background-color: var(--sub-highlight-bg);
+    color: var(--text-color);
+    padding: 0.8em 1em;
+    cursor: pointer;
+    font-weight: 500;
+    border-bottom: 2px solid var(--border-color);
+    transition: all 0.3s ease;
+    letter-spacing: 0.3px;
+}
+
+.chapter-title:hover {
+    background-color: var(--hover-bg);
+    padding-left: 1.2em;
+}
+
+.chapter-content {
+    padding: 1em;
+    display: none;
+    background-color: var(--box-bg);
+    border-top: 1px solid var(--border-color);
+}
+
+.chapter-content.show {
+    display: block;
+}
+
+.chapter-content a {
+    color: var(--text-color); /* Use the text color for better visibility */
+    text-decoration: underline;
+}
+
+.chapter-content a:hover {
+    color: #000000; /* Black color on hover for contrast in light theme */
+}
+
+[data-theme="dark"] .chapter-content a {
+    color: #FFFFFF; /* White color for visibility in dark theme */
+}
+
+[data-theme="dark"] .chapter-content a:hover {
+    color: #CCCCCC; /* Light gray on hover for contrast in dark theme */
+}
+
+.chapters.sub-chapters {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    max-width: none;
+}
+
+.chapters.sub-chapters .chapter-container {
+    font-size: 0.9em;
+    max-width: 100%;
+}
+
+/* Mobile-specific styles */
+@media screen and (max-width: 768px) {
+    #class-container {
+        width: 95%;
+        gap: 0.5em;
+        margin: 0 auto;
+    }
+
+    section {
+        padding: 0.8em;
+    }
+
+    .subjects {
+        padding-left: 0;
+        border-left: none;
+        margin: 0.3em 0 0 0;
+    }
+
+    .subject-box {
+        width: 100%;
+        margin: 0.4em 0;
+        text-align: left;
+        padding: 0.8em 1em;
+    }
+
+    .chapters {
+        padding-left: 1em;
+        width: 100%;
+        margin: 0.3em 0;
+    }
+
+    main {
+        padding: 0.8em;
+    }
+
+    #content-container {
+        margin-top: 0;
+    }
+}
+
+/* For very small screens */
+@media screen and (max-width: 380px) {
+    #class-container {
+        width: 100%;
+        gap: 0.3em;
+    }
+
+    section {
+        padding: 0.7em;
+    }
+
+    .subject-box {
+        padding: 0.7em 0.9em;
+        margin: 0.3em 0;
+    }
+
+    .chapters {
+        margin: 0.2em 0;
+    }
+
+    h1 {
+        font-size: 1.1em;
+    }
+
+    .creator-info {
+        font-size: 0.75em;
+    }
+}
+
+/* Handle iPhone notch */
+@supports (padding: max(0px)) {
+    header {
+        padding-left: max(1em, env(safe-area-inset-left));
+        padding-right: max(1em, env(safe-area-inset-right));
+        padding-top: max(1em, env(safe-area-inset-top));
+    }
+} 

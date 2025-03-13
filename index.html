@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyNinja</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Welcome to StudyNinja</h1>
+            <div class="creator-info">Designed & Created By An Electrical Engineer of D.T.U</div>
+            <button id="theme-toggle" onclick="toggleTheme()">
+                <span class="light-icon">🌞</span>
+                <span class="dark-icon">🌙</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <div id="class-container">
+            <div class="class-wrapper">
+                <section id="class-9" onclick="toggleSubjects('class-9-subjects')">
+                    <h2>Class 9</h2>
+                </section>
+                <div id="class-9-subjects" class="subjects">
+                    <div class="subject-box" onclick="showChapters('class-9-math-chapters', this)">Math</div>
+                    <div id="class-9-math-chapters" class="chapters">
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 1: Number Systems</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 2: Polynomials</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 3: Coordinate Geometry</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 4: Linear Equations</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 5: Introduction to Euclid's Geometry</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 6: Lines and Angles</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 7: Triangles</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 8: Quadrilaterals</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 9: Areas of Parallelograms</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 10: Statistics</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                    </div>
+                    
+                    <div class="subject-box" onclick="showChapters('class-9-science-chapters', this)">Science</div>
+                    <div id="class-9-science-chapters" class="chapters">
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 1: Matter in Our Surroundings</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 2: Is Matter Around Us Pure</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 3: Atoms and Molecules</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 4: Structure of the Atom</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 5: The Fundamental Unit of Life</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 6: Tissues</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 7: Motion</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 8: Force and Laws of Motion</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 9: Gravitation</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 10: Work and Energy</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                    </div>
+                    
+                    <div class="subject-box" onclick="showChapters('class-9-grammar-chapters', this)">English Grammar</div>
+                    <div id="class-9-grammar-chapters" class="chapters">
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 1: Parts of Speech</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 2: Tenses</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 3: Active and Passive Voice</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 4: Direct and Indirect Speech</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 5: Clauses</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 6: Modals</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 7: Determiners</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 8: Prepositions</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 9: Conjunctions</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 10: Punctuation</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="class-wrapper">
+                <section id="class-10" onclick="toggleSubjects('class-10-subjects')">
+                    <h2>Class 10</h2>
+                </section>
+                <div id="class-10-subjects" class="subjects">
+                    <div class="subject-box" onclick="showChapters('class-10-math-chapters', this)">Math</div>
+                    <div id="class-10-math-chapters" class="chapters">
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 1: Real Numbers</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 2: Polynomials</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 3: Pair of Linear Equations</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 4: Quadratic Equations</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 5: Arithmetic Progressions</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 6: Triangles</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 7: Coordinate Geometry</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 8: Introduction to Trigonometry</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 9: Circles</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 10: Probability</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                    </div>
+                    
+                    <div class="subject-box" onclick="showChapters('class-10-science-chapters', this)">Science</div>
+                    <div id="class-10-science-chapters" class="chapters">
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 1: Chemical Reactions and Equations</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 2: Acids, Bases and Salts</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 3: Metals and Non-metals</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 4: Carbon and its Compounds</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 5: Life Processes</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 6: Control and Coordination</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 7: Electricity</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 8: Magnetic Effects of Current</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 9: Light - Reflection and Refraction</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 10: Human Eye and Colorful World</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                    </div>
+                    
+                    <div class="subject-box" onclick="showChapters('class-10-english-chapters', this)">English</div>
+                    <div id="class-10-english-chapters" class="chapters">
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 1: Advanced Grammar</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 2: Reading Comprehension</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 3: Writing Skills</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 4: Literature Analysis</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 5: Poetry Appreciation</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 6: Creative Writing</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 7: Communication Skills</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 8: Literary Devices</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 9: Essay Writing</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                        <div class="chapter-container">
+                            <div class="chapter-title">Chapter 10: Public Speaking</div>
+                            <div class="chapter-content"><!-- Content will be added here --></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="class-wrapper">
+                <section id="class-11" onclick="toggleSubjects('class-11-subjects')">
+                    <h2>Class 11</h2>
+                </section>
+                <div id="class-11-subjects" class="subjects">
+                    <!-- Arts with sub-subjects -->
+                    <div class="subject-box" onclick="showChapters('class-11-arts-subjects', this)">Arts</div>
+                    <div id="class-11-arts-subjects" class="chapters">
+                        <!-- Economics -->
+                        <div class="subject-box sub-subject" onclick="showChapters('class-11-economics-chapters', this)">ECONOMICS</div>
+                        <div id="class-11-economics-chapters" class="chapters sub-chapters">
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 1: Introduction to Economics</div>
+                                <div class="chapter-content">
+                                    <!-- Content will be added here -->
+                                </div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 2: Basic Economic Problems</div>
+                                <div class="chapter-content">
+                                    <!-- Content will be added here -->
+                                </div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 3: Consumer Behavior</div>
+                                <div class="chapter-content">
+                                    <!-- Content will be added here -->
+                                </div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 4: Theory of Demand</div>
+                                <div class="chapter-content">
+                                    <!-- Content will be added here -->
+                                </div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 5: Market Equilibrium</div>
+                                <div class="chapter-content">
+                                    <!-- Content will be added here -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- History -->
+                        <div class="subject-box sub-subject" onclick="showChapters('class-11-history-chapters', this)">HISTORY</div>
+                        <div id="class-11-history-chapters" class="chapters sub-chapters">
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 1: Ancient Civilizations</div>
+                                <div class="chapter-content">
+                                    <!-- Content will be added here -->
+                                </div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 2: Medieval Period</div>
+                                <div class="chapter-content">
+                                    <!-- Content will be added here -->
+                                </div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 3: Modern Era</div>
+                                <div class="chapter-content">
+                                    <!-- Content will be added here -->
+                                </div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 4: World Wars</div>
+                                <div class="chapter-content">
+                                    <!-- Content will be added here -->
+                                </div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 5: Contemporary History</div>
+                                <div class="chapter-content">
+                                    <!-- Content will be added here -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Political Science -->
+                        <div class="subject-box sub-subject" onclick="showChapters('class-11-polsci-chapters', this)">POL.SCIENCE</div>
+                        <div id="class-11-polsci-chapters" class="chapters sub-chapters">
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 1: Political Theory</div>
+                                <div class="chapter-content">
+                                    <!-- Content will be added here -->
+                                </div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 2: Constitution</div>
+                                <div class="chapter-content">
+                                    <!-- Content will be added here -->
+                                </div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 3: Democracy</div>
+                                <div class="chapter-content">
+                                    <!-- Content will be added here -->
+                                </div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 4: Government Systems</div>
+                                <div class="chapter-content">
+                                    <!-- Content will be added here -->
+                                </div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 5: International Relations</div>
+                                <div class="chapter-content">
+                                    <!-- Content will be added here -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Geography -->
+                        <div class="subject-box sub-subject" onclick="showChapters('class-11-geography-chapters', this)">GEOGRAPHY</div>
+                        <div id="class-11-geography-chapters" class="chapters sub-chapters">
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 1: Physical Geography</div>
+                                <div class="chapter-content">
+                                    <!-- Content will be added here -->
+                                </div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 2: Climate</div>
+                                <div class="chapter-content">
+                                    <!-- Content will be added here -->
+                                </div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 3: Natural Resources</div>
+                                <div class="chapter-content">
+                                    <!-- Content will be added here -->
+                                </div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 4: Population</div>
+                                <div class="chapter-content">
+                                    <!-- Content will be added here -->
+                                </div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 5: Economic Geography</div>
+                                <div class="chapter-content">
+                                    <!-- Content will be added here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Science with sub-subjects -->
+                    <div class="subject-box" onclick="showChapters('class-11-science-subjects', this)">Science</div>
+                    <div id="class-11-science-subjects" class="chapters">
+                        <!-- Physics -->
+                        <div class="subject-box sub-subject" onclick="showChapters('class-11-physics-chapters', this)">PHYSICS</div>
+                        <div id="class-11-physics-chapters" class="chapters sub-chapters">
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 1: Physical World and Measurement</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 2: Kinematics</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 3: Current Electricity</div>
+                                <div class="chapter-content">
+                                    Notes: <a href="https://drive.google.com/file/d/1_ELDgVs846jtnDChdZhOfnt5yvntybYs/view?usp=sharing" target="_blank">Download PDF</a>
+                                </div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 4: Work, Energy and Power</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 5: Gravitation</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 6: Properties of Solids and Liquids</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 7: Thermodynamics</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 8: Oscillations and Waves</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 9: Optics</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 10: Modern Physics</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                        </div>
+
+                        <!-- Chemistry -->
+                        <div class="subject-box sub-subject" onclick="showChapters('class-11-chemistry-chapters', this)">CHEMISTRY</div>
+                        <div id="class-11-chemistry-chapters" class="chapters sub-chapters">
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 1: Some Basic Concepts</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 2: Structure of Atom</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 3: Classification of Elements</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 4: Chemical Bonding</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 5: States of Matter</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 6: Thermodynamics</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 7: Equilibrium</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 8: Redox Reactions</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 9: Hydrogen</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 10: Organic Chemistry</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                        </div>
+
+                        <!-- Mathematics -->
+                        <div class="subject-box sub-subject" onclick="showChapters('class-11-math-chapters', this)">MATHEMATICS</div>
+                        <div id="class-11-math-chapters" class="chapters sub-chapters">
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 1: Sets and Functions</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 2: Trigonometry</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 3: Complex Numbers</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 4: Linear Inequalities</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 5: Sequences and Series</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 6: Straight Lines</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 7: Conic Sections</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 8: Limits and Derivatives</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 9: Statistics</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 10: Probability</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                        </div>
+
+                        <!-- Biology -->
+                        <div class="subject-box sub-subject" onclick="showChapters('class-11-biology-chapters', this)">BIOLOGY</div>
+                        <div id="class-11-biology-chapters" class="chapters sub-chapters">
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 1: Living World</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 2: Biological Classification</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 3: Plant Kingdom</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 4: Animal Kingdom</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 5: Morphology of Flowering Plants</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 6: Cell Structure and Function</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 7: Biomolecules</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 8: Cell Cycle and Division</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 9: Transport in Plants</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 10: Transport in Animals</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="class-wrapper">
+                <section id="class-12" onclick="toggleSubjects('class-12-subjects')">
+                    <h2>Class 12</h2>
+                </section>
+                <div id="class-12-subjects" class="subjects">
+                    <div class="subject-box" onclick="showChapters('class-12-commerce-chapters', this)">Commerce</div>
+                    <div id="class-12-commerce-chapters" class="chapters">
+                        <div>Chapter 1</div>
+                        <div>Chapter 2</div>
+                        <div>Chapter 3</div>
+                        <div>Chapter 4</div>
+                        <div>Chapter 5</div>
+                        <div>Chapter 6</div>
+                        <div>Chapter 7</div>
+                        <div>Chapter 8</div>
+                        <div>Chapter 9</div>
+                        <div>Chapter 10</div>
+                    </div>
+                    
+                    <div class="subject-box" onclick="showChapters('class-12-science-subjects', this)">Science</div>
+                    <div id="class-12-science-subjects" class="chapters">
+                        <!-- Physics -->
+                        <div class="subject-box sub-subject" onclick="showChapters('class-12-physics-chapters', this)">PHYSICS</div>
+                        <div id="class-12-physics-chapters" class="chapters sub-chapters">
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 1: Electric Charges and Fields</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 2: Electrostatic Potential</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 3: Current Electricity</div>
+                                <div class="chapter-content">
+                                    Notes: <a href="https://drive.google.com/file/d/1_ELDgVs846jtnDChdZhOfnt5yvntybYs/view?usp=sharing" target="_blank">Download PDF</a>
+                                </div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 4: Magnetism</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 5: Electromagnetic Induction</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 6: Alternating Current</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 7: Electromagnetic Waves</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 8: Ray Optics</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 9: Wave Optics</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 10: Quantum Physics</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                        </div>
+
+                        <!-- Chemistry -->
+                        <div class="subject-box sub-subject" onclick="showChapters('class-12-chemistry-chapters', this)">CHEMISTRY</div>
+                        <div id="class-12-chemistry-chapters" class="chapters sub-chapters">
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 1: Solid State</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 2: Solutions</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 3: Electrochemistry</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 4: Chemical Kinetics</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 5: Surface Chemistry</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 6: Coordination Compounds</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 7: p-Block Elements</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 8: d-Block Elements</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 9: Alcohols and Ethers</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 10: Biomolecules</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                        </div>
+
+                        <!-- Mathematics -->
+                        <div class="subject-box sub-subject" onclick="showChapters('class-12-math-chapters', this)">MATHEMATICS</div>
+                        <div id="class-12-math-chapters" class="chapters sub-chapters">
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 1: Relations and Functions</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 2: Inverse Trigonometry</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 3: Matrices</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 4: Determinants</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 5: Continuity and Differentiability</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 6: Integration</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 7: Differential Equations</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 8: Vector Algebra</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 9: 3D Geometry</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 10: Linear Programming</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                        </div>
+
+                        <!-- Biology -->
+                        <div class="subject-box sub-subject" onclick="showChapters('class-12-biology-chapters', this)">BIOLOGY</div>
+                        <div id="class-12-biology-chapters" class="chapters sub-chapters">
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 1: Reproduction in Organisms</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 2: Sexual Reproduction in Flowering Plants</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 3: Human Reproduction</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 4: Reproductive Health</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 5: Principles of Inheritance</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 6: Molecular Basis of Inheritance</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 7: Evolution</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 8: Human Health and Disease</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 9: Biotechnology</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                            <div class="chapter-container">
+                                <div class="chapter-title">Chapter 10: Ecology and Environment</div>
+                                <div class="chapter-content"><!-- Content will be added here --></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html> 
